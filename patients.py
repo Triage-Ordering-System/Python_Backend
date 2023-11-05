@@ -25,14 +25,14 @@ class Patients:
         return self.list_of_symptoms_durations
     
     def add_symptom(self, symptom, duration):
-        t  = (symptom, duration)
+        t  = (symptom, int(duration))
         self.list_of_symptoms_durations += t
 
     def set_score(self, num):
-        self.score = num
+        self.score = int(num)
     
     def set_severity(self, num):
-        self.severity = num
+        self.severity = int(num)
     
     def get_severity(self):
         return self.severity
